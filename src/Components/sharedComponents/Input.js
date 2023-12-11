@@ -7,13 +7,7 @@ function Input(props) {
   return (
     <div className="form-control">
       <label htmlFor={name}>{label}</label>
-      <Field
-        type="text"
-        id={name}
-        name={name}
-        {...rest}
-        placeholder="Enter your E-Mail"
-      />
+      <Field type="text" id={name} name={name} {...rest} />
       <ErrorMessage name={name} component={TextError} />
     </div>
   );
